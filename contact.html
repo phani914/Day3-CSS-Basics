@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | BrightPath Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>BrightPath Studio</h1>
+      <input type="checkbox" id="contact-menu-toggle" class="menu-toggle" aria-label="Open or close navigation menu">
+      <label for="contact-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="index.html" title="Go to homepage">Home</a>
+        <a href="index.html#services" title="Go to services section">Services</a>
+        <a href="portfolio.html" title="Open portfolio page">Portfolio</a>
+        <a href="blog.html" title="Open blog page">Blog</a>
+        <a href="contact.html" title="Open contact page">Contact</a>
+        <a href="login.html" title="Open login page">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact BrightPath Studio</h2>
+      <p>Tell us about your company website, accessibility update, or responsive layout project.</p>
+    </section>
+
+    <section class="contact-layout" aria-label="Contact information and form">
+      <div class="contact-details">
+        <h2>Get in Touch</h2>
+        <p>We usually reply within one business day.</p>
+        <address>
+          <p><strong>Email:</strong> hello@brightpathstudio.example</p>
+          <p><strong>Phone:</strong> +1 555 014 7280</p>
+          <p><strong>Office:</strong> 120 Market Street, San Francisco, CA</p>
+        </address>
+      </div>
+
+      <form action="#" method="post" aria-label="Contact form">
+        <div>
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your full name" title="Enter your full name" required>
+        </div>
+
+        <div>
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="you@example.com" title="Enter your email address" required>
+        </div>
+
+        <div>
+          <label for="contact-service">Project Type</label>
+          <select id="contact-service" name="service" title="Choose a project type" required>
+            <option value="">Select a service</option>
+            <option value="website-design">Website Design</option>
+            <option value="accessibility">Accessibility Review</option>
+            <option value="responsive-layout">Responsive Layout</option>
+            <option value="website-refresh">Website Refresh</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Share a few details about your project" title="Enter your project message" required></textarea>
+        </div>
+
+        <button type="submit" aria-label="Send contact request" title="Send contact request">Send Request</button>
+      </form>
+    </section>
+
+    <section class="map-section" aria-labelledby="map-heading">
+      <h2 id="map-heading">Find Our Office</h2>
+      <div class="map-wrapper">
+        <iframe
+          title="Map showing BrightPath Studio office area in San Francisco"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-122.4215%2C37.7730%2C-122.4115%2C37.7830&amp;layer=mapnik&amp;marker=37.7780%2C-122.4167"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p><a href="https://www.openstreetmap.org/?mlat=37.7780&amp;mlon=-122.4167#map=15/37.7780/-122.4167" title="Open map in a new browser tab">Open larger map</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-sections" aria-label="Footer sections">
+      <div>
+        <h2>BrightPath Studio</h2>
+        <p>Responsive, accessible websites for growing companies.</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>hello@brightpathstudio.example</p>
+        <p>+1 555 014 7280</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <p><a href="portfolio.html">Portfolio</a></p>
+        <p><a href="blog.html">Blog</a></p>
+      </div>
+    </section>
+    <p>&copy; 2026 BrightPath Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

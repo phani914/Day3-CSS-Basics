@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Management Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+  <header class="dashboard-topbar">
+    <h1>PeopleOps HR</h1>
+    <nav aria-label="Dashboard account navigation">
+      <a href="#notifications" title="View notifications">Notifications</a>
+      <a href="#profile" title="View profile">Profile</a>
+    </nav>
+  </header>
+
+  <div class="dashboard-shell">
+    <aside class="dashboard-sidebar" aria-label="HR dashboard sidebar">
+      <nav aria-label="HR management navigation">
+        <a href="#overview" title="View dashboard overview">Overview</a>
+        <a href="#employees" title="View employees">Employees</a>
+        <a href="#recruitment" title="View recruitment pipeline">Recruitment</a>
+        <a href="#leave" title="View leave requests">Leave</a>
+        <a href="#payroll" title="View payroll summary">Payroll</a>
+        <a href="#tasks" title="View HR tasks">Tasks</a>
+      </nav>
+    </aside>
+
+    <main class="dashboard-main">
+      <section id="overview" aria-labelledby="overview-heading">
+        <div class="dashboard-heading">
+          <div>
+            <p class="eyebrow">HR management system</p>
+            <h2 id="overview-heading">Admin Dashboard</h2>
+          </div>
+          <button type="button" aria-label="Add a new employee" title="Add employee">Add Employee</button>
+        </div>
+
+        <div class="dashboard-cards" aria-label="HR summary metrics">
+          <article class="metric-card">
+            <h3>Total Employees</h3>
+            <p>248</p>
+            <span>+12 this quarter</span>
+          </article>
+          <article class="metric-card">
+            <h3>Open Roles</h3>
+            <p>18</p>
+            <span>6 final interviews</span>
+          </article>
+          <article class="metric-card">
+            <h3>Leave Requests</h3>
+            <p>27</p>
+            <span>9 pending approval</span>
+          </article>
+          <article class="metric-card">
+            <h3>Payroll Status</h3>
+            <p>Ready</p>
+            <span>Due May 25</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-grid" aria-label="HR dashboard details">
+        <section id="employees" class="dashboard-panel" aria-labelledby="employees-heading">
+          <div class="panel-heading">
+            <h2 id="employees-heading">Employee Directory</h2>
+            <a href="#" aria-label="View all employees" title="View all employees">View all</a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <caption>Recent employee records</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jordan Lee</td>
+                  <td>Engineering</td>
+                  <td>Frontend Lead</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Mina Patel</td>
+                  <td>People</td>
+                  <td>HR Partner</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td>Owen Garcia</td>
+                  <td>Sales</td>
+                  <td>Account Executive</td>
+                  <td>On Leave</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="recruitment" class="dashboard-panel" aria-labelledby="recruitment-heading">
+          <h2 id="recruitment-heading">Recruitment Pipeline</h2>
+          <ul class="status-list">
+            <li><span>Applications</span><strong>142</strong></li>
+            <li><span>Screening</span><strong>38</strong></li>
+            <li><span>Interview</span><strong>16</strong></li>
+            <li><span>Offer</span><strong>4</strong></li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Requests and tasks">
+        <section id="leave" class="dashboard-panel" aria-labelledby="leave-heading">
+          <h2 id="leave-heading">Leave Requests</h2>
+          <article class="request-item">
+            <h3>Avery Kim</h3>
+            <p>Annual leave: May 22 to May 26</p>
+            <button type="button" aria-label="Review Avery Kim leave request" title="Review leave request">Review</button>
+          </article>
+          <article class="request-item">
+            <h3>Nora Wilson</h3>
+            <p>Sick leave: May 20</p>
+            <button type="button" aria-label="Review Nora Wilson leave request" title="Review leave request">Review</button>
+          </article>
+        </section>
+
+        <section id="tasks" class="dashboard-panel" aria-labelledby="tasks-heading">
+          <h2 id="tasks-heading">HR Tasks</h2>
+          <form action="#" method="post" aria-label="HR task checklist">
+            <div class="checkbox-field">
+              <input type="checkbox" id="task-contracts" name="task-contracts">
+              <label for="task-contracts">Send new hire contracts</label>
+            </div>
+            <div class="checkbox-field">
+              <input type="checkbox" id="task-payroll" name="task-payroll">
+              <label for="task-payroll">Approve payroll changes</label>
+            </div>
+            <div class="checkbox-field">
+              <input type="checkbox" id="task-reviews" name="task-reviews">
+              <label for="task-reviews">Prepare performance review list</label>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <section id="payroll" class="dashboard-panel" aria-labelledby="payroll-heading">
+        <h2 id="payroll-heading">Payroll Summary</h2>
+        <p>Payroll is ready for final review. Finance approval is scheduled before the May 25 processing date.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

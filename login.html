@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | BrightPath Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>BrightPath Studio</h1>
+      <input type="checkbox" id="login-menu-toggle" class="menu-toggle" aria-label="Open or close navigation menu">
+      <label for="login-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="index.html" title="Go to homepage">Home</a>
+        <a href="index.html#services" title="Go to services section">Services</a>
+        <a href="contact.html" title="Open contact page">Contact</a>
+        <a href="login.html" title="Open login page">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="login-main">
+    <section class="login-panel" aria-labelledby="login-heading">
+      <h2 id="login-heading">Sign in to your account</h2>
+      <p id="login-help">Enter your email address and password to access your BrightPath Studio account.</p>
+
+      <form action="#" method="post" aria-describedby="login-help">
+        <div>
+          <label for="login-email">Email address</label>
+          <input
+            type="email"
+            id="login-email"
+            name="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            title="Enter your account email address"
+            required
+          >
+        </div>
+
+        <div>
+          <label for="login-password">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            autocomplete="current-password"
+            placeholder="Enter your password"
+            title="Enter your account password"
+            required
+            minlength="8"
+          >
+        </div>
+
+        <div class="form-row">
+          <div class="checkbox-field">
+            <input type="checkbox" id="remember-me" name="remember-me" aria-label="Remember this device">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <a href="#" aria-label="Recover your forgotten password" title="Forgot password">Forgot password?</a>
+        </div>
+
+        <button type="submit" aria-label="Sign in to your account" title="Sign in">Sign In</button>
+      </form>
+
+      <p class="signup-text">Need an account? <a href="#" aria-label="Create a new BrightPath Studio account" title="Create account">Create one</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrightPath Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

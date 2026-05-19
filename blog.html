@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | BrightPath Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>BrightPath Studio</h1>
+      <input type="checkbox" id="blog-menu-toggle" class="menu-toggle" aria-label="Open or close navigation menu">
+      <label for="blog-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="index.html" title="Go to homepage">Home</a>
+        <a href="index.html#services" title="Go to services section">Services</a>
+        <a href="blog.html" title="Open blog page">Blog</a>
+        <a href="contact.html" title="Open contact page">Contact</a>
+        <a href="login.html" title="Open login page">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-intro" aria-labelledby="blog-heading">
+      <h2 id="blog-heading">Company Website Blog</h2>
+      <p>Ideas on responsive design, accessibility, content structure, and building company websites that are easy to use.</p>
+    </section>
+
+    <div class="blog-layout">
+      <section class="blog-posts" aria-label="Blog posts">
+        <article class="blog-card">
+          <h3>Why Semantic HTML Matters</h3>
+          <p class="post-meta">Published May 19, 2026</p>
+          <p>Semantic tags help browsers, search engines, and assistive technologies understand the purpose of each part of a webpage.</p>
+          <a href="#" aria-label="Read more about why semantic HTML matters" title="Read more about semantic HTML">Read more</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>Designing Navigation for Every Screen</h3>
+          <p class="post-meta">Published May 19, 2026</p>
+          <p>A responsive navigation menu should be clear on desktop, easy to open on mobile, and comfortable to use with a keyboard.</p>
+          <a href="#" aria-label="Read more about designing navigation for every screen" title="Read more about responsive navigation">Read more</a>
+        </article>
+
+        <article class="blog-card">
+          <h3>Accessible Forms Start With Labels</h3>
+          <p class="post-meta">Published May 19, 2026</p>
+          <p>Every form field needs a clear label connected to the correct input so users know exactly what information to enter.</p>
+          <a href="#" aria-label="Read more about accessible forms and labels" title="Read more about accessible forms">Read more</a>
+        </article>
+      </section>
+
+      <aside class="blog-sidebar" aria-labelledby="sidebar-heading">
+        <h2 id="sidebar-heading">Blog Sidebar</h2>
+
+        <section>
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#" title="View accessibility posts">Accessibility</a></li>
+            <li><a href="#" title="View responsive design posts">Responsive Design</a></li>
+            <li><a href="#" title="View HTML structure posts">HTML Structure</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>About the Blog</h3>
+          <p>Short lessons and examples for building simple, readable, and accessible webpages.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrightPath Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

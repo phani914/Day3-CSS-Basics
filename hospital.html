@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareBridge Hospital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hospital-page">
+  <header class="hospital-header">
+    <nav class="hospital-nav" aria-label="Hospital navigation">
+      <h1>CareBridge Hospital</h1>
+      <input type="checkbox" id="hospital-menu-toggle" class="menu-toggle" aria-label="Open or close hospital navigation menu">
+      <label for="hospital-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="#home" title="Go to hospital home section">Home</a>
+        <a href="#departments" title="View hospital departments">Departments</a>
+        <a href="#doctors" title="View featured doctors">Doctors</a>
+        <a href="#appointment" title="Book an appointment">Appointment</a>
+        <a href="#contact" title="View hospital contact details">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hospital-hero" id="home" aria-labelledby="hospital-heading">
+      <div>
+        <p class="eyebrow">24/7 emergency and specialty care</p>
+        <h2 id="hospital-heading">Compassionate healthcare for every stage of life.</h2>
+        <p>CareBridge Hospital provides modern medical services, experienced doctors, and patient-first support in one accessible place.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="#appointment" aria-label="Book a hospital appointment" title="Book appointment">Book Appointment</a>
+          <a class="button-link secondary" href="#emergency" aria-label="View emergency contact information" title="Emergency information">Emergency Info</a>
+        </div>
+      </div>
+      <div class="image-section">
+        <img
+          src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80"
+          alt="Hospital corridor with medical staff walking through the ward"
+          title="CareBridge Hospital facility"
+          width="900"
+          height="600"
+        >
+      </div>
+    </section>
+
+    <section class="emergency-strip" id="emergency" aria-labelledby="emergency-heading">
+      <div>
+        <h2 id="emergency-heading">Emergency Care</h2>
+        <p>Call our 24-hour emergency desk for urgent medical support.</p>
+      </div>
+      <a href="tel:+15550141000" aria-label="Call CareBridge Hospital emergency desk" title="Call emergency desk">+1 555 014 1000</a>
+    </section>
+
+    <section id="departments" aria-labelledby="departments-heading">
+      <h2 id="departments-heading">Departments</h2>
+      <p class="section-intro">Our core medical departments are organized for quick diagnosis, treatment, recovery, and continuing care.</p>
+      <div class="hospital-grid">
+        <article class="hospital-card">
+          <h3>Cardiology</h3>
+          <p>Heart health consultations, diagnostics, prevention planning, and cardiac follow-up care.</p>
+        </article>
+        <article class="hospital-card">
+          <h3>Neurology</h3>
+          <p>Care for headaches, seizures, nerve conditions, stroke recovery, and neurological disorders.</p>
+        </article>
+        <article class="hospital-card">
+          <h3>Orthopedics</h3>
+          <p>Bone, joint, spine, and sports injury treatment with rehabilitation guidance.</p>
+        </article>
+        <article class="hospital-card">
+          <h3>Pediatrics</h3>
+          <p>Child-focused care, vaccination support, growth tracking, and family health guidance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="doctors" aria-labelledby="doctors-heading">
+      <h2 id="doctors-heading">Featured Doctors</h2>
+      <div class="doctor-list">
+        <article class="doctor-card">
+          <h3>Dr. Maya Reynolds</h3>
+          <p><strong>Cardiologist</strong></p>
+          <p>Specializes in preventive cardiology and long-term heart care.</p>
+        </article>
+        <article class="doctor-card">
+          <h3>Dr. Alan Chen</h3>
+          <p><strong>Neurologist</strong></p>
+          <p>Focuses on stroke recovery, migraines, and nerve conditions.</p>
+        </article>
+        <article class="doctor-card">
+          <h3>Dr. Priya Nair</h3>
+          <p><strong>Pediatrician</strong></p>
+          <p>Provides family-centered care for infants, children, and teens.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="two-column-layout" aria-label="Hospital patient information">
+      <section>
+        <h2>Patient Services</h2>
+        <ul class="check-list">
+          <li>Outpatient consultations</li>
+          <li>Diagnostic lab and imaging</li>
+          <li>Pharmacy and insurance desk</li>
+          <li>Post-treatment follow-up</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Visiting Hours</h2>
+        <p>General wards: 10:00 AM to 7:00 PM</p>
+        <p>ICU visits: 11:00 AM to 12:00 PM and 5:00 PM to 6:00 PM</p>
+        <p>Please check with reception before visiting critical care areas.</p>
+      </section>
+    </section>
+
+    <section id="appointment" class="appointment-section" aria-labelledby="appointment-heading">
+      <h2 id="appointment-heading">Book an Appointment</h2>
+      <form action="#" method="post" aria-label="Hospital appointment form">
+        <div>
+          <label for="patient-name">Patient Name</label>
+          <input type="text" id="patient-name" name="patient-name" autocomplete="name" placeholder="Full name" title="Enter patient full name" required>
+        </div>
+
+        <div>
+          <label for="patient-email">Email</label>
+          <input type="email" id="patient-email" name="patient-email" autocomplete="email" placeholder="you@example.com" title="Enter patient email address" required>
+        </div>
+
+        <div>
+          <label for="patient-phone">Phone</label>
+          <input type="tel" id="patient-phone" name="patient-phone" autocomplete="tel" placeholder="+1 555 000 0000" title="Enter patient phone number" required>
+        </div>
+
+        <div>
+          <label for="department">Department</label>
+          <select id="department" name="department" title="Choose a hospital department" required>
+            <option value="">Select department</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="orthopedics">Orthopedics</option>
+            <option value="pediatrics">Pediatrics</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="appointment-message">Health Concern</label>
+          <textarea id="appointment-message" name="appointment-message" rows="5" placeholder="Briefly describe your concern" title="Enter health concern details" required></textarea>
+        </div>
+
+        <button type="submit" aria-label="Submit hospital appointment request" title="Submit appointment request">Request Appointment</button>
+      </form>
+    </section>
+
+    <section id="contact" class="hospital-contact" aria-labelledby="hospital-contact-heading">
+      <div>
+        <h2 id="hospital-contact-heading">Contact and Location</h2>
+        <address>
+          <p><strong>Address:</strong> 84 Wellness Avenue, San Francisco, CA</p>
+          <p><strong>Phone:</strong> +1 555 014 2200</p>
+          <p><strong>Email:</strong> care@carebridgehospital.example</p>
+        </address>
+      </div>
+      <div class="map-wrapper">
+        <iframe
+          title="Map showing CareBridge Hospital area in San Francisco"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-122.4215%2C37.7730%2C-122.4115%2C37.7830&amp;layer=mapnik&amp;marker=37.7780%2C-122.4167"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-sections" aria-label="Hospital footer sections">
+      <div>
+        <h2>CareBridge Hospital</h2>
+        <p>Patient-first healthcare with responsive support and accessible information.</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <p><a href="#departments">Departments</a></p>
+        <p><a href="#appointment">Appointment</a></p>
+      </div>
+      <div>
+        <h2>Emergency</h2>
+        <p><a href="tel:+15550141000">+1 555 014 1000</a></p>
+        <p>Open 24 hours, every day.</p>
+      </div>
+    </section>
+    <p>&copy; 2026 CareBridge Hospital. All rights reserved.</p>
+  </footer>
+</body>
+</html>

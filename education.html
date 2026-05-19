@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnBridge Academy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="education-page">
+  <header class="education-header">
+    <nav class="education-nav" aria-label="Education platform navigation">
+      <h1>LearnBridge Academy</h1>
+      <input type="checkbox" id="education-menu-toggle" class="menu-toggle" aria-label="Open or close education navigation menu">
+      <label for="education-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="#home" title="Go to homepage section">Home</a>
+        <a href="#courses" title="View featured courses">Courses</a>
+        <a href="#features" title="View learning features">Features</a>
+        <a href="#instructors" title="View instructors">Instructors</a>
+        <a href="#enroll" title="Enroll in a course">Enroll</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="education-hero" id="home" aria-labelledby="education-heading">
+      <div>
+        <p class="eyebrow">Accessible online learning</p>
+        <h2 id="education-heading">Build practical skills with flexible, guided courses.</h2>
+        <p>LearnBridge Academy helps students and professionals learn at their own pace with structured lessons, expert support, and accessible study tools.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="#courses" aria-label="Browse featured courses" title="Browse courses">Browse Courses</a>
+          <a class="button-link secondary" href="#enroll" aria-label="Go to enrollment form" title="Start learning">Start Learning</a>
+        </div>
+      </div>
+      <div class="image-section">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+          alt="Students collaborating around laptops during an online learning session"
+          title="LearnBridge Academy students"
+          width="900"
+          height="600"
+        >
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Platform highlights">
+      <article>
+        <h2>120+</h2>
+        <p>Guided lessons</p>
+      </article>
+      <article>
+        <h2>35K</h2>
+        <p>Active learners</p>
+      </article>
+      <article>
+        <h2>24/7</h2>
+        <p>Course access</p>
+      </article>
+    </section>
+
+    <section id="courses" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Featured Courses</h2>
+      <p class="section-intro">Choose from beginner-friendly courses designed with clear modules, captions, readable materials, and practical projects.</p>
+      <div class="course-grid">
+        <article class="course-card">
+          <h3>Web Development Basics</h3>
+          <p>Learn semantic HTML, responsive CSS, forms, navigation, and accessible page structure.</p>
+          <a href="#enroll" aria-label="Enroll in Web Development Basics" title="Enroll in Web Development Basics">Enroll now</a>
+        </article>
+        <article class="course-card">
+          <h3>Data Skills for Work</h3>
+          <p>Practice spreadsheets, charts, analysis habits, and clear data storytelling for everyday decisions.</p>
+          <a href="#enroll" aria-label="Enroll in Data Skills for Work" title="Enroll in Data Skills for Work">Enroll now</a>
+        </article>
+        <article class="course-card">
+          <h3>UX and Accessibility</h3>
+          <p>Design inclusive interfaces with labels, contrast, keyboard support, and user-centered content.</p>
+          <a href="#enroll" aria-label="Enroll in UX and Accessibility" title="Enroll in UX and Accessibility">Enroll now</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Learning Features</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Accessible Lessons</h3>
+          <p>Course pages use headings, readable contrast, descriptive links, captions, and keyboard-friendly controls.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Progress Tracking</h3>
+          <p>Students can follow modules, assignments, and completion milestones with clear status updates.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Project Practice</h3>
+          <p>Each course includes hands-on tasks that help learners apply concepts in realistic scenarios.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Mentor Support</h3>
+          <p>Instructors answer questions, review work, and guide learners through difficult topics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="instructors" aria-labelledby="instructors-heading">
+      <h2 id="instructors-heading">Meet the Instructors</h2>
+      <div class="instructor-list">
+        <article class="instructor-card">
+          <h3>Ari Morgan</h3>
+          <p><strong>Frontend Instructor</strong></p>
+          <p>Teaches responsive layouts, semantic HTML, and accessible interface patterns.</p>
+        </article>
+        <article class="instructor-card">
+          <h3>Samira Patel</h3>
+          <p><strong>Data Instructor</strong></p>
+          <p>Focuses on practical analytics, spreadsheets, dashboards, and decision-ready reports.</p>
+        </article>
+        <article class="instructor-card">
+          <h3>Leo Martinez</h3>
+          <p><strong>UX Mentor</strong></p>
+          <p>Helps learners design clear workflows, inclusive content, and usable forms.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="two-column-layout" aria-label="Education platform information">
+      <section>
+        <h2>How Learning Works</h2>
+        <ul class="check-list">
+          <li>Pick a course that matches your goal.</li>
+          <li>Complete short lessons and practice tasks.</li>
+          <li>Submit projects for mentor feedback.</li>
+          <li>Track progress until completion.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Accessibility Support</h2>
+        <p>LearnBridge Academy supports keyboard navigation, visible focus states, descriptive links, properly labeled forms, and meaningful image descriptions.</p>
+      </section>
+    </section>
+
+    <section id="enroll" class="enroll-section" aria-labelledby="enroll-heading">
+      <h2 id="enroll-heading">Enroll Today</h2>
+      <form action="#" method="post" aria-label="Course enrollment form">
+        <div>
+          <label for="student-name">Full Name</label>
+          <input type="text" id="student-name" name="student-name" autocomplete="name" placeholder="Your full name" title="Enter your full name" required>
+        </div>
+
+        <div>
+          <label for="student-email">Email</label>
+          <input type="email" id="student-email" name="student-email" autocomplete="email" placeholder="you@example.com" title="Enter your email address" required>
+        </div>
+
+        <div>
+          <label for="course-choice">Course</label>
+          <select id="course-choice" name="course-choice" title="Choose a course" required>
+            <option value="">Select a course</option>
+            <option value="web-development">Web Development Basics</option>
+            <option value="data-skills">Data Skills for Work</option>
+            <option value="ux-accessibility">UX and Accessibility</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="learning-goal">Learning Goal</label>
+          <textarea id="learning-goal" name="learning-goal" rows="5" placeholder="Tell us what you want to learn" title="Enter your learning goal" required></textarea>
+        </div>
+
+        <button type="submit" aria-label="Submit course enrollment form" title="Submit enrollment">Submit Enrollment</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer-sections" aria-label="Education platform footer sections">
+      <div>
+        <h2>LearnBridge Academy</h2>
+        <p>Flexible, accessible learning for students and working professionals.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <p><a href="#courses">Courses</a></p>
+        <p><a href="#features">Features</a></p>
+      </div>
+      <div>
+        <h2>Support</h2>
+        <p>support@learnbridge.example</p>
+        <p><a href="#enroll">Enrollment help</a></p>
+      </div>
+    </section>
+    <p>&copy; 2026 LearnBridge Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>

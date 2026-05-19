@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightPath Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <h1>BrightPath Studio</h1>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open or close navigation menu">
+      <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="#home" title="Go to homepage section">Home</a>
+        <a href="#about" title="Go to about section">About</a>
+        <a href="#services" title="Go to services section">Services</a>
+        <a href="#work" title="Go to featured work section">Work</a>
+        <a href="contact.html" title="Open contact page">Contact</a>
+        <a href="login.html" title="Open login page">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h2>Websites that help companies look clear, credible, and ready to grow.</h2>
+        <p>BrightPath Studio designs responsive business websites with strong structure, accessible forms, and content that is easy to navigate on every device.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="contact.html" aria-label="Start a website project by going to the contact page" title="Start a project">Start a Project</a>
+          <a class="button-link secondary" href="#services" aria-label="View BrightPath Studio services" title="View services">View Services</a>
+        </div>
+      </div>
+      <div class="image-section">
+        <img
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+          alt="Modern company workspace with desks and large windows"
+          title="BrightPath Studio workspace"
+          width="900"
+          height="600"
+        >
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>We are a small digital team focused on practical, polished websites for growing companies. Our pages are built with semantic HTML, responsive layouts, and accessible details from the start.</p>
+    </section>
+
+    <div class="two-column-layout">
+      <section>
+        <h2>Our Mission</h2>
+        <p>We help teams explain what they do with clean structure, clear messaging, and websites that feel dependable.</p>
+      </section>
+
+      <section>
+        <h2>Our Approach</h2>
+        <p>We start with the user journey, then build sections that are easy to scan, easy to maintain, and comfortable on phones, tablets, and desktops.</p>
+      </section>
+    </div>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p class="section-intro">Choose the support your company needs, from a polished first website to accessibility improvements on an existing one.</p>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Website Design</h3>
+          <p>Responsive homepage and interior page layouts for company websites that need a clear, professional presence.</p>
+          <a href="contact.html" aria-label="Plan a website design project" title="Plan a website">Plan a website</a>
+        </article>
+        <article class="service-card">
+          <h3>Content Structure</h3>
+          <p>Clear page sections, navigation, headings, and calls to action so visitors can quickly understand what you offer.</p>
+          <a href="contact.html" aria-label="Ask about improving website content structure" title="Improve content">Improve content</a>
+        </article>
+        <article class="service-card">
+          <h3>Accessibility</h3>
+          <p>Labels, alt text, readable contrast, and semantic markup for better usability.</p>
+          <a href="contact.html" aria-label="Ask for an accessibility review" title="Review accessibility">Review accessibility</a>
+        </article>
+        <article class="service-card">
+          <h3>Responsive Layouts</h3>
+          <p>Flexible grids and image sections that adapt smoothly across phones, tablets, laptops, and desktops.</p>
+          <a href="contact.html" aria-label="Ask about responsive website layout support" title="Make it responsive">Make it responsive</a>
+        </article>
+        <article class="service-card">
+          <h3>Landing Pages</h3>
+          <p>Focused pages for campaigns, launches, and service offers with strong structure and simple conversion paths.</p>
+          <a href="contact.html" aria-label="Ask about building a landing page" title="Build a landing page">Build a page</a>
+        </article>
+        <article class="service-card">
+          <h3>Website Refresh</h3>
+          <p>Updates to older pages so they feel easier to navigate, read, and maintain without starting from scratch.</p>
+          <a href="contact.html" aria-label="Ask about refreshing an existing website" title="Refresh my site">Refresh my site</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="image-section" id="work" aria-labelledby="work-heading">
+      <h2 id="work-heading">Featured Work</h2>
+      <p>A responsive image section keeps visual content flexible while reserving the right space for loading.</p>
+      <img
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+        alt="Laptop on a desk showing code on the screen"
+        title="Responsive website development"
+        width="900"
+        height="500"
+      >
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Tell us a little about your company website project.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Your full name" title="Enter your full name" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" title="Enter your email address" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" title="Enter your project message" required></textarea>
+        </div>
+
+        <button type="submit" aria-label="Send contact message" title="Send message">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 BrightPath Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
