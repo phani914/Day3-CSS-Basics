@@ -243,10 +243,155 @@ footer {
   padding: 22px;
 }
 
+.home-page {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef6f8;
+}
+
+.home-page header {
+  background-color: #155e75;
+}
+
+.home-page nav h1 {
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.home-page .nav-links a {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+
+.home-page .nav-links a:hover {
+  color: #155e75;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.home-page main {
+  background-color: #fff;
+}
+
+.home-page .hero {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 64px 20px;
+  background-color: #e0f2fe;
+}
+
+.home-page .hero h2 {
+  color: #134e4a;
+  font-size: clamp(36px, 6vw, 60px);
+}
+
+.home-page .hero p {
+  color: #334155;
+  font-size: 19px;
+}
+
+.home-page .button-link {
+  border: 2px solid #9f1239;
+  border-radius: 6px;
+  background-color: #9f1239;
+}
+
+.home-page .button-link:hover {
+  background-color: #881337;
+}
+
+.home-page .button-link.secondary {
+  border-color: #155e75;
+  background-color: #ecfeff;
+}
+
+.home-page .button-link.secondary:hover {
+  color: #fff;
+  background-color: #155e75;
+}
+
+.home-page #about,
+.home-page #services,
+.home-page #work,
+.home-page #contact {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.home-page #about {
+  background-color: #f8fafc;
+}
+
+.home-page .two-column-layout section {
+  padding: 24px;
+  border: 2px solid #bae6fd;
+  border-radius: 10px;
+  background-color: #f0f9ff;
+}
+
+.home-page #services {
+  background-color: #fff;
+}
+
+.home-page .service-card {
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  box-shadow: 0 10px 20px rgba(21, 94, 117, 0.08);
+}
+
+.home-page .service-card h3 {
+  color: #155e75;
+}
+
+.home-page .service-card a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #155e75;
+  text-decoration: none;
+}
+
+.home-page .service-card a:hover {
+  background-color: #134e4a;
+}
+
+.home-page #work {
+  background-color: #ecfeff;
+}
+
+.home-page #work img {
+  border: 4px solid #bae6fd;
+  border-radius: 12px;
+}
+
+.home-page #contact {
+  background-color: #fdf2f8;
+}
+
+.home-page #contact form {
+  margin-top: 20px;
+  padding: 24px;
+  border: 2px solid #fbcfe8;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.home-page footer {
+  background-color: #083344;
+  color: #cffafe;
+}
+
 .login-page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background:
+    linear-gradient(rgba(245, 247, 251, 0.9), rgba(245, 247, 251, 0.9)),
+    linear-gradient(135deg, #fff1f2, #e0f2fe);
 }
 
 .login-main {
@@ -254,19 +399,51 @@ footer {
   flex: 1;
   display: grid;
   place-items: center;
-  padding: 48px 20px;
+  padding: clamp(32px, 8vw, 72px) 20px;
 }
 
 .login-panel {
-  width: min(100%, 460px);
-  padding: 32px;
-  border: 1px solid #d7dee4;
-  border-radius: 8px;
+  width: min(100%, 480px);
+  padding: clamp(24px, 5vw, 40px);
+  border: 2px solid #fecdd3;
+  border-radius: 16px;
   background-color: #fff;
+  box-shadow: 0 20px 45px rgba(127, 29, 29, 0.14);
+}
+
+.login-panel h2 {
+  margin-bottom: 10px;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.1;
+  text-align: center;
+}
+
+.login-panel p {
+  text-align: center;
 }
 
 .login-panel form {
+  display: grid;
+  gap: 18px;
   max-width: none;
+  margin-top: 24px;
+}
+
+.login-panel label {
+  display: block;
+  margin-bottom: 6px;
+  color: #7f1d1d;
+}
+
+.login-panel input[type="email"],
+.login-panel input[type="password"] {
+  min-height: 48px;
+  border: 2px solid #fecdd3;
+  background-color: #fff7f8;
+}
+
+.login-panel input:focus {
+  border-color: #be123c;
 }
 
 .form-row {
@@ -285,6 +462,19 @@ footer {
 
 .checkbox-field input {
   width: auto;
+}
+
+.login-panel button {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(190, 18, 60, 0.24);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.login-panel button:hover {
+  box-shadow: 0 12px 24px rgba(190, 18, 60, 0.32);
+  transform: translateY(-2px);
 }
 
 .signup-text {
@@ -450,18 +640,77 @@ footer {
   background-color: #0d4f5c;
 }
 
+.hospital-page {
+  background-color: #eaf7f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hospital-page main {
+  background-color: #fff;
+}
+
+.hospital-nav .nav-links {
+  align-items: center;
+  gap: 10px;
+}
+
+.hospital-nav .nav-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hospital-nav .nav-links a:hover {
+  color: #0d4f5c;
+  background-color: #fff;
+  text-decoration: none;
+}
+
 .hospital-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   gap: 32px;
   align-items: center;
   min-height: 430px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 64px 20px;
+  background-color: #ecfeff;
 }
 
 .hospital-hero h2 {
   margin-bottom: 14px;
+  color: #0f766e;
   font-size: clamp(34px, 5vw, 54px);
   line-height: 1.08;
+}
+
+.hospital-hero p {
+  color: #334155;
+  font-size: 18px;
+}
+
+.hospital-page .button-link {
+  border: 2px solid #0d4f5c;
+  border-radius: 6px;
+  background-color: #0d4f5c;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hospital-page .button-link:hover {
+  background-color: #083f49;
+  transform: translateY(-2px);
+}
+
+.hospital-page .button-link.secondary {
+  color: #0d4f5c;
+  background-color: #e0f2fe;
+}
+
+.hospital-page .button-link.secondary:hover {
+  color: #fff;
+  background-color: #0d4f5c;
 }
 
 .eyebrow {
@@ -476,7 +725,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  margin: 28px 0;
   padding: 24px;
+  border: 3px solid #fecaca;
   border-radius: 8px;
   color: #fff;
   background-color: #b42318;
@@ -501,6 +752,33 @@ footer {
   gap: 20px;
 }
 
+.hospital-page #departments,
+.hospital-page #doctors,
+.hospital-page .two-column-layout,
+.hospital-page #appointment,
+.hospital-page #contact {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.hospital-page #departments {
+  background-color: #f0fdfa;
+}
+
+.hospital-page #doctors {
+  background-color: #f8fafc;
+}
+
+.hospital-page #appointment {
+  background-color: #eff6ff;
+}
+
+.hospital-page #contact {
+  background-color: #f0fdf4;
+}
+
 .doctor-list {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -508,9 +786,10 @@ footer {
 .hospital-card,
 .doctor-card {
   padding: 22px;
-  border: 1px solid #d7dee4;
-  border-radius: 8px;
-  background-color: #fbfcfd;
+  border: 2px solid #99f6e4;
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 12px 26px rgba(13, 79, 92, 0.1);
 }
 
 .hospital-card h3,
@@ -519,12 +798,24 @@ footer {
   color: #0d4f5c;
 }
 
+.hospital-page .two-column-layout section {
+  padding: 24px;
+  border: 2px solid #bae6fd;
+  border-radius: 14px;
+  background-color: #fff;
+}
+
 .check-list {
   padding-left: 20px;
 }
 
 .appointment-section form {
   max-width: 620px;
+  margin-top: 20px;
+  padding: 24px;
+  border: 2px solid #bfdbfe;
+  border-radius: 14px;
+  background-color: #fff;
 }
 
 .hospital-contact {
@@ -538,8 +829,198 @@ footer {
   font-style: normal;
 }
 
+.hospital-contact .map-wrapper {
+  border: 3px solid #99f6e4;
+  border-radius: 14px;
+}
+
+.hospital-page footer {
+  background-color: #083344;
+}
+
+.hospital-page footer .footer-sections {
+  align-items: start;
+}
+
 .education-header {
   background-color: #1f4f7a;
+}
+
+.education-nav {
+  padding: 4px 0;
+}
+
+.education-nav h1 {
+  letter-spacing: 0;
+}
+
+.education-nav .nav-links {
+  align-items: center;
+  gap: 10px;
+}
+
+.education-nav .nav-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.education-nav .nav-links a:hover {
+  color: #1f4f7a;
+  background-color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.education-nav .menu-button {
+  border-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.education-nav .menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+.education-page {
+  background-color: #f8fafc;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.education-page main {
+  background-color: #fff;
+  text-align: left;
+}
+
+.education-page h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: 0;
+  line-height: 1.12;
+  text-align: center;
+}
+
+.education-page h3 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.education-page p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.education-page .section-intro,
+.education-page .education-hero p {
+  max-width: 720px;
+  text-align: center;
+}
+
+.education-page .education-hero p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.education-page .course-card,
+.education-page .feature-card,
+.education-page .instructor-card,
+.education-page form {
+  text-align: left;
+}
+
+.education-page h2,
+.education-page label {
+  display: block;
+}
+
+.education-page .course-card a,
+.education-page strong {
+  display: inline;
+}
+
+.education-page .button-link,
+.education-page button {
+  display: inline-block;
+  box-shadow: 0 6px 14px rgba(180, 83, 9, 0.24);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.education-page .button-link:hover,
+.education-page button:hover {
+  box-shadow: 0 10px 22px rgba(180, 83, 9, 0.32);
+  transform: translateY(-2px);
+}
+
+.education-page #courses,
+.education-page #services,
+.education-page #features,
+.education-page #gallery,
+.education-page #instructors,
+.education-page .two-column-layout,
+.education-page #schedule,
+.education-page #pricing,
+.education-page #enroll {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.education-page #courses {
+  background:
+    linear-gradient(180deg, rgba(239, 246, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    radial-gradient(circle at top left, #bfdbfe, transparent 32%);
+}
+
+.education-page #services {
+  background:
+    linear-gradient(135deg, #f8fafc 0%, #ecfeff 100%);
+}
+
+.education-page #features {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.education-page #instructors {
+  background-color: #fef3c7;
+}
+
+.education-page #gallery {
+  background:
+    linear-gradient(135deg, #fdf2f8 0%, #eef2ff 100%);
+}
+
+.education-page .two-column-layout {
+  background-image:
+    linear-gradient(rgba(31, 79, 122, 0.88), rgba(31, 79, 122, 0.88)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.education-page .two-column-layout h2,
+.education-page .two-column-layout p,
+.education-page .two-column-layout li {
+  color: #fff;
+}
+
+.education-page #enroll {
+  background:
+    linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
+}
+
+.education-page #pricing {
+  background:
+    linear-gradient(135deg, #fff7ed 0%, #fffbeb 100%);
+}
+
+.education-page #schedule {
+  background:
+    linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
 }
 
 .education-hero {
@@ -548,12 +1029,25 @@ footer {
   gap: 32px;
   align-items: center;
   min-height: 430px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 72px 20px;
+  background:
+    linear-gradient(135deg, rgba(239, 246, 255, 0.96), rgba(240, 253, 250, 0.92)),
+    url("https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 .education-hero h2 {
   margin-bottom: 14px;
   font-size: clamp(34px, 5vw, 54px);
   line-height: 1.08;
+}
+
+.education-hero .image-section img {
+  border: 4px solid #fff;
+  box-shadow: 0 20px 42px rgba(30, 64, 175, 0.18);
 }
 
 .stats-strip {
@@ -564,7 +1058,9 @@ footer {
 }
 
 .stats-strip article {
+  margin: 4px;
   padding: 22px;
+  border: 3px solid #93c5fd;
   border-radius: 8px;
   color: #fff;
   background-color: #1f4f7a;
@@ -577,6 +1073,7 @@ footer {
 }
 
 .course-grid,
+.education-service-list,
 .feature-grid,
 .instructor-list {
   display: grid;
@@ -587,6 +1084,75 @@ footer {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.education-service-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.education-service-card {
+  display: block;
+  margin: 8px 0;
+  padding: 24px;
+  border: 2px solid #cbd5e1;
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 12px 28px rgba(30, 64, 175, 0.08);
+}
+
+.education-service-card h3 {
+  margin-top: 0;
+}
+
+.education-service-card p {
+  margin-bottom: 18px;
+}
+
+.education-service-card a {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #1d4ed8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.education-service-card a:hover {
+  background-color: #1e40af;
+}
+
+.gallery-list {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.gallery-item {
+  display: inline-block;
+  width: min(100%, 300px);
+  margin: 10px;
+  padding: 12px;
+  border: 2px solid #fbcfe8;
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 12px 26px rgba(157, 23, 77, 0.08);
+  vertical-align: top;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.gallery-item figcaption {
+  padding-top: 10px;
+  color: #9d174d;
+  font-weight: bold;
+  text-align: center;
+}
+
 .feature-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -595,13 +1161,208 @@ footer {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.education-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.education-price-card {
+  margin: 8px 0;
+  padding: 26px;
+  border: 2px solid #fed7aa;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 12px 28px rgba(154, 52, 18, 0.1);
+}
+
+.education-price-card h3 {
+  margin-top: 0;
+  color: #9a3412;
+}
+
+.education-price {
+  margin: 8px 0 12px;
+  color: #c2410c;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.education-price-card a {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: 2px solid #c2410c;
+  border-radius: 8px;
+  color: #c2410c;
+  background-color: #fff7ed;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.education-price-card a:hover {
+  color: #fff;
+  background-color: #c2410c;
+}
+
+.highlighted-price-card {
+  border-color: #c2410c;
+  background-color: #ffedd5;
+}
+
+.education-table-wrapper {
+  overflow-x: auto;
+  margin-top: 24px;
+  border: 2px solid #c7d2fe;
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #312e81;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.education-table caption {
+  padding: 16px;
+  color: #3730a3;
+  background-color: #e0e7ff;
+  font-size: 20px;
+  text-align: left;
+}
+
+.education-table th {
+  padding: 14px;
+  color: #fff;
+  background-color: #4338ca;
+  font-weight: bold;
+}
+
+.education-table td {
+  padding: 14px;
+  border-bottom: 1px solid #c7d2fe;
+}
+
+.education-table tbody tr:nth-child(even) {
+  background-color: #f5f3ff;
+}
+
+.education-table tbody tr:hover {
+  background-color: #ddd6fe;
+}
+
+.education-page footer {
+  padding: 36px 22px 24px;
+  background-color: #172554;
+  text-align: left;
+}
+
+.education-page footer .footer-sections {
+  align-items: start;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.education-page footer h2 {
+  margin-bottom: 10px;
+  color: #bfdbfe;
+  font-size: 20px;
+  text-align: left;
+}
+
+.education-page footer p {
+  margin: 8px 0;
+  color: #dbeafe;
+}
+
+.education-page footer a {
+  color: #fde68a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.education-page footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.education-page footer > p {
+  max-width: 1100px;
+  margin: 18px auto 0;
+  color: #bfdbfe;
+  font-size: 14px;
+  text-align: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: min(100%, 760px);
+  margin: 24px auto 30px;
+  padding: 24px;
+  border: 3px solid #f59e0b;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0 16px 32px rgba(133, 77, 14, 0.16);
+}
+
+.profile-card img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  padding: 4px;
+  border: 3px solid #fde68a;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fffbeb;
+}
+
+.profile-card h3 {
+  margin: 0 0 8px;
+  color: #92400e;
+}
+
+.profile-card p {
+  margin: 0;
+}
+
+.profile-card .profile-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #92400e;
+  background-color: #fef3c7;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .course-card,
 .feature-card,
 .instructor-card {
-  padding: 22px;
-  border: 1px solid #d7dee4;
-  border-radius: 8px;
+  border: 2px solid #bfdbfe;
+  border-radius: 14px;
   background-color: #fbfcfd;
+  box-shadow: 0 12px 26px rgba(29, 78, 216, 0.08);
+}
+
+.course-card {
+  margin: 6px 0;
+  padding: 24px;
+}
+
+.feature-card {
+  margin: 12px 0;
+  padding: 18px;
+}
+
+.instructor-card {
+  margin: 0 6px 12px;
+  padding: 28px 20px;
 }
 
 .course-card h3,
@@ -617,11 +1378,44 @@ footer {
 }
 
 .enroll-section form {
+  margin: 18px auto 0;
   max-width: 620px;
+  padding: 24px;
+  border: 2px dashed #93c5fd;
+  border-radius: 14px;
+  background-color: #f8fbff;
 }
 
 .freelance-header {
-  background-color: #243b53;
+  background-color: #312e81;
+}
+
+.freelance-page {
+  background-color: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.freelance-page main {
+  background-color: #fff;
+}
+
+.freelance-nav .nav-links {
+  align-items: center;
+  gap: 10px;
+}
+
+.freelance-nav .nav-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.freelance-nav .nav-links a:hover {
+  color: #312e81;
+  background-color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
 }
 
 .freelance-hero {
@@ -630,12 +1424,53 @@ footer {
   gap: 32px;
   align-items: center;
   min-height: 430px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 72px 20px;
+  background:
+    linear-gradient(135deg, rgba(245, 243, 255, 0.96), rgba(236, 254, 255, 0.9)),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 .freelance-hero h2 {
   margin-bottom: 14px;
+  color: #312e81;
   font-size: clamp(34px, 5vw, 54px);
   line-height: 1.08;
+}
+
+.freelance-hero p {
+  color: #334155;
+  font-size: 18px;
+}
+
+.freelance-hero .image-section img {
+  border: 4px solid #fff;
+  box-shadow: 0 20px 42px rgba(49, 46, 129, 0.2);
+}
+
+.freelance-page .button-link {
+  border: 2px solid #312e81;
+  border-radius: 8px;
+  background-color: #312e81;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.freelance-page .button-link:hover {
+  background-color: #1e1b4b;
+  transform: translateY(-2px);
+}
+
+.freelance-page .button-link.secondary {
+  color: #312e81;
+  background-color: #eef2ff;
+}
+
+.freelance-page .button-link.secondary:hover {
+  color: #fff;
+  background-color: #312e81;
 }
 
 .marketplace-stats {
@@ -647,9 +1482,11 @@ footer {
 
 .marketplace-stats article {
   padding: 22px;
-  border-radius: 8px;
+  border: 2px solid #c4b5fd;
+  border-radius: 14px;
   color: #fff;
-  background-color: #243b53;
+  background-color: #312e81;
+  box-shadow: 0 12px 26px rgba(49, 46, 129, 0.16);
 }
 
 .marketplace-stats h2,
@@ -664,18 +1501,50 @@ footer {
   gap: 20px;
 }
 
+.freelance-page #services,
+.freelance-page #how-it-works {
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.freelance-page #services {
+  background:
+    linear-gradient(135deg, #fff 0%, #f5f3ff 100%);
+}
+
+.freelance-page #how-it-works {
+  background:
+    linear-gradient(135deg, #312e81 0%, #0f766e 100%);
+}
+
+.freelance-page #how-it-works section {
+  padding: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  border-radius: 14px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.freelance-page #how-it-works h2,
+.freelance-page #how-it-works p {
+  color: #fff;
+}
+
 .freelance-card {
   display: flex;
   flex-direction: column;
-  padding: 22px;
-  border: 1px solid #d7dee4;
-  border-radius: 8px;
-  background-color: #fbfcfd;
+  padding: 24px;
+  border: 2px solid #ddd6fe;
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 14px 30px rgba(49, 46, 129, 0.1);
 }
 
 .freelance-card h3 {
   margin-top: 0;
-  color: #243b53;
+  color: #312e81;
 }
 
 .freelance-card p {
@@ -683,13 +1552,46 @@ footer {
 }
 
 .freelance-card a {
+  display: inline-block;
   width: fit-content;
-  color: #243b53;
+  padding: 9px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #0f766e;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.freelance-card a:hover {
+  background-color: #115e59;
+}
+
+.freelance-page footer {
+  background-color: #1e1b4b;
+}
+
+.freelance-page footer .footer-sections {
+  align-items: start;
+}
+
+.freelance-page footer h2 {
+  color: #ddd6fe;
+}
+
+.freelance-page footer a {
+  color: #ccfbf1;
+  text-decoration: none;
+}
+
+.freelance-page footer a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .dashboard-page {
-  background-color: #eef2f6;
+  background-color: #edf2f7;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .dashboard-topbar {
@@ -697,22 +1599,40 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background-color: #1f2937;
+  min-height: 72px;
+  padding: 18px 28px;
+  background-color: #111827;
+  box-shadow: 0 2px 12px rgba(17, 24, 39, 0.18);
+}
+
+.dashboard-topbar h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .dashboard-topbar nav {
   display: flex;
-  gap: 16px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dashboard-topbar a {
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.dashboard-topbar a:hover {
+  background-color: #374151;
 }
 
 .dashboard-shell {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  min-height: calc(100vh - 76px);
+  grid-template-columns: 260px minmax(0, 1fr);
+  min-height: calc(100vh - 72px);
 }
 
 .dashboard-sidebar {
-  padding: 24px;
+  padding: 28px 22px;
   background-color: #111827;
 }
 
@@ -729,13 +1649,19 @@ footer {
 }
 
 .dashboard-sidebar a {
-  padding: 10px 0;
+  display: block;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.dashboard-sidebar a:hover {
+  background-color: #1f2937;
 }
 
 .dashboard-main {
   max-width: none;
-  padding: 28px;
-  background-color: #eef2f6;
+  padding: 32px;
+  background-color: #edf2f7;
 }
 
 .dashboard-heading,
@@ -748,21 +1674,35 @@ footer {
 
 .dashboard-heading h2 {
   margin-bottom: 0;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.dashboard-heading button,
+.request-item button {
+  border-radius: 8px;
+  background-color: #047857;
+  box-shadow: 0 8px 18px rgba(4, 120, 87, 0.2);
+}
+
+.dashboard-heading button:hover,
+.request-item button:hover {
+  background-color: #065f46;
 }
 
 .dashboard-cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 22px;
+  gap: 20px;
+  margin-top: 24px;
 }
 
 .metric-card,
 .dashboard-panel {
-  padding: 22px;
-  border: 1px solid #d7dee4;
-  border-radius: 8px;
+  padding: 24px;
+  border: 1px solid #dbe3ec;
+  border-radius: 12px;
   background-color: #fff;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.07);
 }
 
 .metric-card h3,
@@ -772,8 +1712,10 @@ footer {
 
 .metric-card p {
   color: #1f2937;
-  font-size: 30px;
+  margin-bottom: 8px;
+  font-size: 32px;
   font-weight: bold;
+  line-height: 1.1;
 }
 
 .metric-card span {
@@ -783,17 +1725,20 @@ footer {
 .dashboard-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.8fr);
-  gap: 20px;
+  gap: 24px;
   padding: 24px 0 0;
 }
 
 .table-wrapper {
   overflow-x: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #fff;
 }
 
 caption {
@@ -804,9 +1749,16 @@ caption {
 
 th,
 td {
-  padding: 12px;
+  padding: 14px;
   border-bottom: 1px solid #d7dee4;
   text-align: left;
+}
+
+th {
+  color: #374151;
+  background-color: #f8fafc;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 .status-list {
@@ -820,21 +1772,44 @@ td {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid #d7dee4;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f8fafc;
 }
 
 .request-item {
-  padding: 14px 0;
-  border-bottom: 1px solid #d7dee4;
+  margin-top: 14px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background-color: #f8fafc;
 }
 
 .request-item h3 {
   margin-top: 0;
 }
 
+.dashboard-panel form {
+  display: grid;
+  gap: 14px;
+  max-width: none;
+}
+
+.dashboard-panel .checkbox-field {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
 .startup-header {
   background-color: #102a43;
+}
+
+.startup-page .eyebrow,
+.startup-page .price {
+  color: #7c3aed;
 }
 
 .startup-hero {
@@ -936,6 +1911,208 @@ td {
   max-width: none;
 }
 
+#startup-heading {
+  color: #0f766e;
+  letter-spacing: 0;
+}
+
+#product-heading,
+#features-heading,
+#pricing-heading,
+#contact-heading {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #d9480f;
+}
+
+.home-page {
+  --page-heading: #155e75;
+  --page-paragraph: #46565d;
+  --page-button: #9f1239;
+  --page-button-hover: #881337;
+  --page-button-soft: #ecfeff;
+  --page-button-soft-text: #0e7490;
+}
+
+.blog-page {
+  --page-heading: #854d0e;
+  --page-paragraph: #57534e;
+  --page-button: #2563eb;
+  --page-button-hover: #1d4ed8;
+}
+
+.portfolio-page {
+  --page-heading: #6d28d9;
+  --page-paragraph: #4b5563;
+  --page-button: #0f766e;
+  --page-button-hover: #115e59;
+}
+
+.contact-page {
+  --page-heading: #be123c;
+  --page-paragraph: #475569;
+  --page-button: #0f766e;
+  --page-button-hover: #115e59;
+}
+
+.hospital-page {
+  --page-heading: #0d6b57;
+  --page-paragraph: #415466;
+  --page-button: #c2410c;
+  --page-button-hover: #9a3412;
+  --page-button-soft: #ecfdf5;
+  --page-button-soft-text: #047857;
+}
+
+.education-page {
+  --page-heading: #1d4ed8;
+  --page-paragraph: #475569;
+  --page-button: #b45309;
+  --page-button-hover: #92400e;
+  --page-button-soft: #eff6ff;
+  --page-button-soft-text: #1d4ed8;
+}
+
+.freelance-page {
+  --page-heading: #7c3aed;
+  --page-paragraph: #4b5563;
+  --page-button: #0f766e;
+  --page-button-hover: #115e59;
+  --page-button-soft: #f5f3ff;
+  --page-button-soft-text: #6d28d9;
+}
+
+.startup-page {
+  --page-heading: #0f766e;
+  --page-paragraph: #475569;
+  --page-button: #d9480f;
+  --page-button-hover: #b83a0b;
+  --page-button-soft: #fff1e8;
+  --page-button-soft-text: #9a3412;
+}
+
+.login-page {
+  --page-heading: #7f1d1d;
+  --page-paragraph: #57534e;
+  --page-button: #be123c;
+  --page-button-hover: #9f1239;
+}
+
+.dashboard-page {
+  --page-heading: #4338ca;
+  --page-paragraph: #374151;
+  --page-button: #047857;
+  --page-button-hover: #065f46;
+}
+
+.home-page main h2,
+.home-page main h3,
+.blog-page main h2,
+.blog-page main h3,
+.portfolio-page main h2,
+.portfolio-page main h3,
+.contact-page main h2,
+.contact-page main h3,
+.hospital-page main h2,
+.hospital-page main h3,
+.education-page main h2,
+.education-page main h3,
+.freelance-page main h2,
+.freelance-page main h3,
+.startup-page main h2,
+.startup-page main h3,
+.login-page main h2,
+.login-page main h3,
+.dashboard-page main h2,
+.dashboard-page main h3 {
+  color: var(--page-heading);
+}
+
+.home-page main p,
+.blog-page main p,
+.portfolio-page main p,
+.contact-page main p,
+.hospital-page main p,
+.education-page main p,
+.freelance-page main p,
+.startup-page main p,
+.login-page main p,
+.dashboard-page main p {
+  color: var(--page-paragraph);
+}
+
+.home-page .button-link,
+.home-page button,
+.contact-page button,
+.hospital-page .button-link,
+.hospital-page button,
+.education-page .button-link,
+.education-page button,
+.freelance-page .button-link,
+.freelance-page button,
+.startup-page .button-link,
+.startup-page .pricing-card a,
+.startup-page button,
+.login-page button,
+.dashboard-page button {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--page-button);
+  font: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-page .button-link:hover,
+.home-page button:hover,
+.contact-page button:hover,
+.hospital-page .button-link:hover,
+.hospital-page button:hover,
+.education-page .button-link:hover,
+.education-page button:hover,
+.freelance-page .button-link:hover,
+.freelance-page button:hover,
+.startup-page .button-link:hover,
+.startup-page .pricing-card a:hover,
+.startup-page button:hover,
+.login-page button:hover,
+.dashboard-page button:hover {
+  background-color: var(--page-button-hover);
+}
+
+.home-page .button-link.secondary,
+.hospital-page .button-link.secondary,
+.education-page .button-link.secondary,
+.freelance-page .button-link.secondary,
+.startup-page .button-link.secondary {
+  color: var(--page-button-soft-text);
+  background-color: var(--page-button-soft);
+}
+
+.home-page .button-link.secondary:hover,
+.hospital-page .button-link.secondary:hover,
+.education-page .button-link.secondary:hover,
+.freelance-page .button-link.secondary:hover,
+.startup-page .button-link.secondary:hover {
+  color: #fff;
+  background-color: var(--page-button-hover);
+}
+
+.hospital-page .emergency-strip h2,
+.hospital-page .emergency-strip p,
+.education-page .stats-strip h2,
+.education-page .stats-strip p,
+.freelance-page .marketplace-stats h2,
+.freelance-page .marketplace-stats p,
+.startup-page .startup-proof h2,
+.startup-page .startup-proof p {
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   nav {
     display: grid;
@@ -956,8 +2133,10 @@ td {
   .education-hero,
   .stats-strip,
   .course-grid,
+  .education-service-list,
   .feature-grid,
   .instructor-list,
+  .education-pricing-grid,
   .freelance-hero,
   .marketplace-stats,
   .freelance-services,
@@ -985,6 +2164,14 @@ td {
     padding: 18px 24px;
   }
 
+  .dashboard-sidebar nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-main {
+    padding: 20px;
+  }
+
   .emergency-strip {
     align-items: flex-start;
     flex-direction: column;
@@ -1009,6 +2196,20 @@ td {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
+  .education-nav .nav-links a {
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  .profile-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .education-page footer .footer-sections {
+    text-align: left;
+  }
+
   .menu-toggle:checked ~ .nav-links {
     display: flex;
   }
@@ -1017,5 +2218,15 @@ td {
 @media (max-width: 520px) {
   .login-panel {
     padding: 24px 18px;
+  }
+
+  .login-panel h2,
+  .login-panel p {
+    text-align: left;
+  }
+
+  .login-panel .form-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }

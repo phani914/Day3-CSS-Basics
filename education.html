@@ -19,8 +19,12 @@
       <div class="nav-links">
         <a href="#home" title="Go to homepage section">Home</a>
         <a href="#courses" title="View featured courses">Courses</a>
+        <a href="#services" title="View student services">Services</a>
         <a href="#features" title="View learning features">Features</a>
+        <a href="#gallery" title="View learning gallery">Gallery</a>
         <a href="#instructors" title="View instructors">Instructors</a>
+        <a href="#schedule" title="View course schedule">Schedule</a>
+        <a href="#pricing" title="View pricing plans">Pricing</a>
         <a href="#enroll" title="Enroll in a course">Enroll</a>
       </div>
     </nav>
@@ -85,6 +89,28 @@
       </div>
     </section>
 
+    <section id="services" class="education-services" aria-labelledby="education-services-heading">
+      <h2 id="education-services-heading">Student Services</h2>
+      <p class="section-intro">Get practical support before, during, and after each course.</p>
+      <div class="education-service-list">
+        <article class="education-service-card">
+          <h3>Study Planning</h3>
+          <p>Build a weekly learning plan with realistic milestones and project deadlines.</p>
+          <a href="#enroll" aria-label="Ask about study planning">Learn more</a>
+        </article>
+        <article class="education-service-card">
+          <h3>Project Feedback</h3>
+          <p>Receive focused notes from mentors on layout, accessibility, and clarity.</p>
+          <a href="#enroll" aria-label="Ask about project feedback">Learn more</a>
+        </article>
+        <article class="education-service-card">
+          <h3>Career Prep</h3>
+          <p>Practice portfolio storytelling, interview explanations, and skill summaries.</p>
+          <a href="#enroll" aria-label="Ask about career prep">Learn more</a>
+        </article>
+      </div>
+    </section>
+
     <section id="features" aria-labelledby="features-heading">
       <h2 id="features-heading">Learning Features</h2>
       <div class="feature-grid">
@@ -107,8 +133,55 @@
       </div>
     </section>
 
+    <section id="gallery" class="education-gallery" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Learning Gallery</h2>
+      <p class="section-intro">A quick look at collaborative lessons, study sessions, and project-based learning.</p>
+      <div class="gallery-list">
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80"
+            alt="Students collaborating around laptops"
+            width="500"
+            height="340"
+          >
+          <figcaption>Group workshops</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80"
+            alt="Online learning workspace on a laptop"
+            width="500"
+            height="340"
+          >
+          <figcaption>Online lessons</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=500&q=80"
+            alt="Open books and study materials"
+            width="500"
+            height="340"
+          >
+          <figcaption>Study materials</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="instructors" aria-labelledby="instructors-heading">
       <h2 id="instructors-heading">Meet the Instructors</h2>
+      <article class="profile-card" aria-label="Featured instructor profile">
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80"
+          alt="Featured instructor Maya Chen smiling"
+          width="120"
+          height="120"
+        >
+        <div>
+          <p class="profile-label">Featured Mentor</p>
+          <h3>Maya Chen</h3>
+          <p>Maya guides learners through portfolio projects, feedback sessions, and accessible interface design practice.</p>
+        </div>
+      </article>
       <div class="instructor-list">
         <article class="instructor-card">
           <h3>Ari Morgan</h3>
@@ -143,6 +216,68 @@
         <h2>Accessibility Support</h2>
         <p>LearnBridge Academy supports keyboard navigation, visible focus states, descriptive links, properly labeled forms, and meaningful image descriptions.</p>
       </section>
+    </section>
+
+    <section id="schedule" class="education-schedule" aria-labelledby="schedule-heading">
+      <h2 id="schedule-heading">Course Schedule</h2>
+      <div class="education-table-wrapper">
+        <table class="education-table">
+          <caption>Upcoming guided course sessions</caption>
+          <thead>
+            <tr>
+              <th scope="col">Course</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">Format</th>
+              <th scope="col">Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development Basics</td>
+              <td>June 3</td>
+              <td>Live online</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>Data Skills for Work</td>
+              <td>June 10</td>
+              <td>Self-paced</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>UX and Accessibility</td>
+              <td>June 17</td>
+              <td>Live online</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pricing" class="education-pricing" aria-labelledby="education-pricing-heading">
+      <h2 id="education-pricing-heading">Learning Plans</h2>
+      <p class="section-intro">Choose a plan that matches your pace, support needs, and learning goals.</p>
+      <div class="education-pricing-grid">
+        <article class="education-price-card">
+          <h3>Starter</h3>
+          <p class="education-price">$15</p>
+          <p>Access one course, guided lessons, and downloadable practice files.</p>
+          <a href="#enroll" aria-label="Choose Starter learning plan">Choose Starter</a>
+        </article>
+        <article class="education-price-card highlighted-price-card">
+          <h3>Plus</h3>
+          <p class="education-price">$39</p>
+          <p>Access all courses, project reviews, mentor support, and progress tracking.</p>
+          <a href="#enroll" aria-label="Choose Plus learning plan">Choose Plus</a>
+        </article>
+        <article class="education-price-card">
+          <h3>Team</h3>
+          <p class="education-price">$99</p>
+          <p>Support for small teams with shared reports, coaching, and learning paths.</p>
+          <a href="#enroll" aria-label="Choose Team learning plan">Choose Team</a>
+        </article>
+      </div>
     </section>
 
     <section id="enroll" class="enroll-section" aria-labelledby="enroll-heading">
