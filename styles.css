@@ -1413,6 +1413,7 @@ footer {
 }
 
 .education-nav .menu-button {
+  display: none;
   border-color: rgba(255, 255, 255, 0.7);
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
@@ -1420,6 +1421,12 @@ footer {
 .education-nav .menu-button:hover {
   background-color: rgba(255, 255, 255, 0.14);
   transform: translateY(-2px);
+}
+
+@media (min-width: 981px) {
+  .education-nav .menu-button {
+    display: none !important;
+  }
 }
 
 .education-page {
@@ -1483,6 +1490,10 @@ footer {
 .home-page .theme-toggle:checked + .home-theme-button::before {
   content: "Light Mode";
   font-size: 14px;
+}
+
+.education-page > .education-theme-button {
+  display: inline-flex;
 }
 
 .education-page main {
@@ -1948,26 +1959,12 @@ footer {
 @media (max-width: 980px) {
   .education-nav {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     align-items: center;
   }
 
   .education-nav .menu-button {
     display: flex;
-  }
-
-  .education-nav .theme-toggle-button {
-    display: inline-flex;
-    position: static;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    box-shadow: none;
-    font-size: 14px;
-    line-height: 1.1;
-    white-space: nowrap;
   }
 
   .education-nav .nav-links {
@@ -3556,7 +3553,7 @@ th {
   }
 
   .education-nav {
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
   }
 
   .hospital-nav {
