@@ -9,13 +9,18 @@
 <body class="education-page">
   <header class="education-header">
     <nav class="education-nav" aria-label="Education platform navigation">
-      <h1>LearnBridge Academy</h1>
+      <h1>
+        <span class="education-logo" aria-hidden="true">LB</span>
+        <span>LearnBridge Academy</span>
+      </h1>
       <input type="checkbox" id="education-menu-toggle" class="menu-toggle" aria-label="Open or close education navigation menu">
       <label for="education-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
       </label>
+      <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Switch education page to light mode">
+      <label for="theme-toggle" class="theme-toggle-button" title="Switch color mode">Light Mode</label>
       <div class="nav-links">
         <a href="#home" title="Go to homepage section">Home</a>
         <a href="#courses" title="View featured courses">Courses</a>
@@ -184,16 +189,34 @@
       </article>
       <div class="instructor-list">
         <article class="instructor-card">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
+            alt="Frontend instructor Ari Morgan smiling"
+            width="120"
+            height="120"
+          >
           <h3>Ari Morgan</h3>
           <p><strong>Frontend Instructor</strong></p>
           <p>Teaches responsive layouts, semantic HTML, and accessible interface patterns.</p>
         </article>
         <article class="instructor-card">
+          <img
+            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80"
+            alt="Data instructor Samira Patel smiling"
+            width="120"
+            height="120"
+          >
           <h3>Samira Patel</h3>
           <p><strong>Data Instructor</strong></p>
           <p>Focuses on practical analytics, spreadsheets, dashboards, and decision-ready reports.</p>
         </article>
         <article class="instructor-card">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
+            alt="UX mentor Leo Martinez smiling"
+            width="120"
+            height="120"
+          >
           <h3>Leo Martinez</h3>
           <p><strong>UX Mentor</strong></p>
           <p>Helps learners design clear workflows, inclusive content, and usable forms.</p>

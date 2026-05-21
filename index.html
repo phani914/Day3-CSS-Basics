@@ -9,7 +9,10 @@
 <body class="home-page">
   <header>
     <nav aria-label="Main navigation">
-      <h1>BrightPath Studio</h1>
+      <h1>
+        <span class="brand-logo home-logo" aria-hidden="true">BP</span>
+        <span>BrightPath Studio</span>
+      </h1>
       <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open or close navigation menu">
       <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
         <span></span>
@@ -26,6 +29,9 @@
       </div>
     </nav>
   </header>
+
+  <input type="checkbox" id="home-theme-toggle" class="theme-toggle home-theme-toggle" aria-label="Switch homepage to dark mode">
+  <label for="home-theme-toggle" class="theme-toggle-button home-theme-button" title="Switch color mode">Dark Mode</label>
 
   <main>
     <section class="hero" id="home">

@@ -9,13 +9,18 @@
 <body class="hospital-page">
   <header class="hospital-header">
     <nav class="hospital-nav" aria-label="Hospital navigation">
-      <h1>CareBridge Hospital</h1>
+      <h1>
+        <span class="brand-logo hospital-logo" aria-hidden="true">CB</span>
+        <span>CareBridge Hospital</span>
+      </h1>
       <input type="checkbox" id="hospital-menu-toggle" class="menu-toggle" aria-label="Open or close hospital navigation menu">
       <label for="hospital-menu-toggle" class="menu-button" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
       </label>
+      <input type="checkbox" id="hospital-theme-toggle" class="theme-toggle" aria-label="Switch hospital page to dark mode">
+      <label for="hospital-theme-toggle" class="theme-toggle-button" title="Switch color mode">Dark Mode</label>
       <div class="nav-links">
         <a href="#home" title="Go to hospital home section">Home</a>
         <a href="#departments" title="View hospital departments">Departments</a>
@@ -83,16 +88,34 @@
       <h2 id="doctors-heading">Featured Doctors</h2>
       <div class="doctor-list">
         <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=300&q=80"
+            alt="Dr. Maya Reynolds smiling in a medical coat"
+            width="120"
+            height="120"
+          >
           <h3>Dr. Maya Reynolds</h3>
           <p><strong>Cardiologist</strong></p>
           <p>Specializes in preventive cardiology and long-term heart care.</p>
         </article>
         <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80"
+            alt="Dr. Alan Chen smiling in a clinical setting"
+            width="120"
+            height="120"
+          >
           <h3>Dr. Alan Chen</h3>
           <p><strong>Neurologist</strong></p>
           <p>Focuses on stroke recovery, migraines, and nerve conditions.</p>
         </article>
         <article class="doctor-card">
+          <img
+            src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=300&q=80"
+            alt="Dr. Priya Nair smiling in a medical coat"
+            width="120"
+            height="120"
+          >
           <h3>Dr. Priya Nair</h3>
           <p><strong>Pediatrician</strong></p>
           <p>Provides family-centered care for infants, children, and teens.</p>
@@ -104,10 +127,10 @@
       <section>
         <h2>Patient Services</h2>
         <ul class="check-list">
-          <li>Outpatient consultations</li>
-          <li>Diagnostic lab and imaging</li>
-          <li>Pharmacy and insurance desk</li>
-          <li>Post-treatment follow-up</li>
+          <li><span>Outpatient consultations</span></li>
+          <li><span>Diagnostic lab and imaging</span></li>
+          <li><span>Pharmacy and insurance desk</span></li>
+          <li><span>Post-treatment follow-up</span></li>
         </ul>
       </section>
 

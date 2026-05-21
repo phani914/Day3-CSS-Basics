@@ -8,12 +8,24 @@
 </head>
 <body class="dashboard-page">
   <header class="dashboard-topbar">
-    <h1>PeopleOps HR</h1>
+    <h1>
+      <span class="brand-logo dashboard-logo" aria-hidden="true">PO</span>
+      <span>PeopleOps HR</span>
+    </h1>
+    <input type="checkbox" id="dashboard-menu-toggle" class="menu-toggle dashboard-menu-toggle" aria-label="Open or close dashboard navigation menu">
+    <label for="dashboard-menu-toggle" class="menu-button dashboard-menu-button" aria-label="Toggle dashboard navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <nav aria-label="Dashboard account navigation">
       <a href="#notifications" title="View notifications">Notifications</a>
       <a href="#profile" title="View profile">Profile</a>
     </nav>
   </header>
+
+  <input type="checkbox" id="dashboard-theme-toggle" class="theme-toggle dashboard-theme-toggle" aria-label="Switch dashboard to dark mode">
+  <label for="dashboard-theme-toggle" class="theme-toggle-button dashboard-theme-button" title="Switch color mode">Dark Mode</label>
 
   <div class="dashboard-shell">
     <aside class="dashboard-sidebar" aria-label="HR dashboard sidebar">
@@ -39,21 +51,25 @@
 
         <div class="dashboard-cards" aria-label="HR summary metrics">
           <article class="metric-card">
+            <span class="metric-icon" aria-hidden="true">TE</span>
             <h3>Total Employees</h3>
             <p>248</p>
             <span>+12 this quarter</span>
           </article>
           <article class="metric-card">
+            <span class="metric-icon" aria-hidden="true">OR</span>
             <h3>Open Roles</h3>
             <p>18</p>
             <span>6 final interviews</span>
           </article>
           <article class="metric-card">
+            <span class="metric-icon" aria-hidden="true">LR</span>
             <h3>Leave Requests</h3>
             <p>27</p>
             <span>9 pending approval</span>
           </article>
           <article class="metric-card">
+            <span class="metric-icon" aria-hidden="true">PS</span>
             <h3>Payroll Status</h3>
             <p>Ready</p>
             <span>Due May 25</span>
@@ -80,19 +96,34 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Jordan Lee</td>
+                  <td>
+                    <span class="employee-cell">
+                      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Jordan Lee" width="40" height="40">
+                      <span>Jordan Lee</span>
+                    </span>
+                  </td>
                   <td>Engineering</td>
                   <td>Frontend Lead</td>
                   <td>Active</td>
                 </tr>
                 <tr>
-                  <td>Mina Patel</td>
+                  <td>
+                    <span class="employee-cell">
+                      <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="Mina Patel" width="40" height="40">
+                      <span>Mina Patel</span>
+                    </span>
+                  </td>
                   <td>People</td>
                   <td>HR Partner</td>
                   <td>Active</td>
                 </tr>
                 <tr>
-                  <td>Owen Garcia</td>
+                  <td>
+                    <span class="employee-cell">
+                      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Owen Garcia" width="40" height="40">
+                      <span>Owen Garcia</span>
+                    </span>
+                  </td>
                   <td>Sales</td>
                   <td>Account Executive</td>
                   <td>On Leave</td>
@@ -117,11 +148,13 @@
         <section id="leave" class="dashboard-panel" aria-labelledby="leave-heading">
           <h2 id="leave-heading">Leave Requests</h2>
           <article class="request-item">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Avery Kim" width="48" height="48">
             <h3>Avery Kim</h3>
             <p>Annual leave: May 22 to May 26</p>
             <button type="button" aria-label="Review Avery Kim leave request" title="Review leave request">Review</button>
           </article>
           <article class="request-item">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Nora Wilson" width="48" height="48">
             <h3>Nora Wilson</h3>
             <p>Sick leave: May 20</p>
             <button type="button" aria-label="Review Nora Wilson leave request" title="Review leave request">Review</button>
@@ -151,6 +184,26 @@
         <h2 id="payroll-heading">Payroll Summary</h2>
         <p>Payroll is ready for final review. Finance approval is scheduled before the May 25 processing date.</p>
       </section>
+
+      <footer class="dashboard-footer">
+        <section class="footer-sections" aria-label="HR dashboard footer sections">
+          <div>
+            <h2>PeopleOps HR</h2>
+            <p>Centralized employee operations, payroll readiness, hiring visibility, and HR task tracking.</p>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <p><a href="#employees">Employee records</a></p>
+            <p><a href="#tasks">HR task queue</a></p>
+          </div>
+          <div>
+            <h2>Contact</h2>
+            <p>hr-support@peopleops.example</p>
+            <p>+1 555 014 8800</p>
+          </div>
+        </section>
+        <p>&copy; 2026 PeopleOps HR. All rights reserved.</p>
+      </footer>
     </main>
   </div>
 </body>
